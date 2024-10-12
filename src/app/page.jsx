@@ -116,7 +116,7 @@ export default function Home() {
                   <button className="boxShadow rounded-lg p-[20px] dark:bg-btn dark:shadow-none w-[80px] h-[80px] flex items-center justify-center">
                     <img
                       src="/assets/images/icon/next-js.svg"
-                      alt="nextjss"
+                      alt="nextjs"
                       className="max-w-full max-h-full"
                     />
                   </button>
