@@ -1,0 +1,32 @@
+# Dépendances
+/node_modules
+
+# Fichiers de build et de sortie
+/.next/
+/out/
+
+# Fichiers d'environnement
+.env.local
+.env.*.local
+
+# Fichiers de logs
+*.log
+
+# Fichiers de runtime
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.sublime*
+*.iml
+
+# Système d'exploitation
+.DS_Store
+Th
