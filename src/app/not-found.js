@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 const NotFound = () => {
-  const [dark, setDark] = useState("white");
+  const [dark, setDark] = useState("dark");
   useEffect(() => {
     setDark(localStorage.getItem("theme"));
   }, []);

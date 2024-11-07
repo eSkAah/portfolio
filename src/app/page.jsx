@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 import Link from "next/link";
 
 export default function Home() {
-  const [dark, setDark] = useState("white");
+  const [dark, setDark] = useState("dark");
 
   useEffect(() => {
     setDark(localStorage.getItem("theme"));

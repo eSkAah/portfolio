@@ -32,6 +32,10 @@ export default function MasterLayout({ children }) {
     }
   };
 
+  useEffect(() => {
+    localStorage.setItem("theme", "dark");
+  }, []);
+
   const sidebarControl = () => {
     setSidebar(!sidebar);
   };
@@ -44,6 +48,7 @@ export default function MasterLayout({ children }) {
       setLoader(false);
     }, 2000);
   }, [pathname]);
+  console.log("DARK", dark);
   return (
     <ThemeProvider>
       <div className={loader ? "" : "hidden"}>
