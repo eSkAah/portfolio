@@ -56,7 +56,9 @@ const page = () => {
                     />
                   </div>
                   <div className="mb-[10px] mt-[20px]">
-                    <p className="text-[16px] text-text">Web Application </p>
+                    <p className="text-[16px] text-text">
+                      SaaS (Software as a Service){" "}
+                    </p>
                     <h2 className="mt-[14px] inline-block text-[30px] leading-[40px] text-btn transition-all duration-300 hover:text-theme dark:text-white dark:hover:text-theme">
                       SaaS de gestion documentaire pour la chirurgie dentaire
                     </h2>
