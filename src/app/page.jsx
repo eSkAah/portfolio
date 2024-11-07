@@ -186,7 +186,7 @@ export default function Home() {
                 <div className="overflow-hidden rounded-lg">
                   <div>
                     <img
-                      src="/assets/images/projects/angular-lol.png"
+                      src="/assets/images/projects/medinote.png"
                       alt=""
                       className="transition-all duration-300 hover:scale-[110%]"
                     />

@@ -28,7 +28,6 @@ const page = () => {
                   </div>
                   <div className="mb-[10px] mt-[20px]">
                     <p className="text-[16px] text-text">Web Application </p>
-                    {/* <Link href="/projects-details"> */}
                     <h2 className="mt-[14px] inline-block text-[30px] leading-[40px] text-btn transition-all duration-300 hover:text-theme dark:text-white dark:hover:text-theme">
                       Application de gestion de projet immobiliers
                     </h2>
@@ -39,13 +38,40 @@ const page = () => {
                       Bitbucket, Jira, TDD Cypress
                     </p>
                     <br />
-                    <p className="text-white">
+                    <p className="text-text">
                       Développement de fonctionnalité sur une web application
                       visant aux promotteurs immobiliers de gérer tous leurs
                       projets de A à Z.
                     </p>
-                    {/*                     </Link>
-                     */}{" "}
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
+                <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
+                  <div className="overflow-hidden rounded-lg w-full h-full lg:h-[233px] d-flex item-center">
+                    <img
+                      src="/assets/images/projects/medinote.png"
+                      alt=""
+                      className="transition-all duration-500 group-hover:scale-[110%]"
+                    />
+                  </div>
+                  <div className="mb-[10px] mt-[20px]">
+                    <p className="text-[16px] text-text">Web Application </p>
+                    <h2 className="mt-[14px] inline-block text-[30px] leading-[40px] text-btn transition-all duration-300 hover:text-theme dark:text-white dark:hover:text-theme">
+                      SaaS de gestion documentaire pour la chirurgie dentaire
+                    </h2>
+                    <p className="text-text">
+                      {" "}
+                      NextJS, TailwindCSS, PostgreSQL, Supabase, NodeJs, AWS,
+                      ShadcnUI, TypeScript, NextAuth
+                    </p>
+                    <br />
+                    <p className="text-text">
+                      Développement d’une plateforme SaaS dédiée aux
+                      professionnels dentaires pour générer, envoyer et faire
+                      signer électroniquement des documents explicatifs et
+                      consentements pour les interventions chirurgicales.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -62,8 +88,6 @@ const page = () => {
                     <p className="text-[16px] text-text">
                       Site web full stack{" "}
                     </p>
-                    {/*                     <Link href="/projects-details">
-                     */}{" "}
                     <h2 className="mt-[14px] inline-block text-[30px] leading-[40px] text-btn transition-all duration-300 hover:text-theme dark:text-white dark:hover:text-theme">
                       Site web gestion de garage automobile
                     </h2>
@@ -71,7 +95,7 @@ const page = () => {
                       Outils: React, TypeScript, MongoDB, NodeJS, Express,
                       Github, MUI Material
                     </p>
-                    <p className="text-white">
+                    <p className="text-text">
                       Site à destionation d'un garage automobile permettant
                       plusieurs fonctionnalités : <br />
                       - Gestion des ventes de véhicules
@@ -110,7 +134,7 @@ const page = () => {
                       React, MongoDB, NodeJS, Express, TypeScript, Websocket,
                       PDFmake, Git, GitLab, TDD Jest, Render{" "}
                     </p>
-                    <p className="text-white">
+                    <p className="text-text">
                       Application de gestion pour les entreprises TPE/PME
                       permettant une gestion complète du personnel, des
                       commandes, des factures, du stock, etc.
