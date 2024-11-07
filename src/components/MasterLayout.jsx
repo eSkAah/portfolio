@@ -13,7 +13,7 @@ import { usePathname } from "next/navigation";
 import { ThemeProvider } from "@material-tailwind/react";
 import InitLoader from "./InitLoader";
 export default function MasterLayout({ children }) {
-  const [dark, setDark] = useState("dark");
+  const [dark, setDark] = useState("");
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
@@ -22,19 +22,21 @@ export default function MasterLayout({ children }) {
   const [sidebar, setSidebar] = useState(false);
   const pathname = usePathname();
 
-  const darkControl = () => {
-    if (localStorage.getItem("theme") === "dark") {
-      localStorage.removeItem("theme");
-      window.location.reload();
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setDark(storedTheme);
     } else {
       localStorage.setItem("theme", "dark");
-      window.location.reload();
+      setDark("dark");
     }
-  };
-
-  useEffect(() => {
-    localStorage.setItem("theme", "dark");
   }, []);
+
+  const darkControl = () => {
+    const newTheme = dark === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", newTheme);
+    setDark(newTheme);
+  };
 
   const sidebarControl = () => {
     setSidebar(!sidebar);

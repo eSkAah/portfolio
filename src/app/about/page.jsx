@@ -4,7 +4,7 @@ import { Progress, Typography } from "@material-tailwind/react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 const page = () => {
-  const [dark, setDark] = useState("dark");
+  const [dark, setDark] = useState("");
   useEffect(() => {
     setDark(localStorage.getItem("theme"));
   }, []);
